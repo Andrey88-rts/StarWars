@@ -18,38 +18,45 @@
   &-title    
     margin-top: 78px
     font-size: 40px
-    line-height: 100%    
+    line-height: 100%
+   
     +pNBlack
   &-subtitle
     margin-top: 5px
     margin-bottom: 25px
     font-size: 64px
-    line-height: 78px       
+    line-height: 78px 
+  
     +pNBlack
   &-text
     margin-bottom: 25px
     max-width: 572px
     font-size: 18px
     line-height: 150%
+    --animate-delay: 1.2s
     color: #AFAFAF
     +roboto
   &-premier
     margin-bottom: 5px
     font-size: 18px
     line-height: 150%
+   
     color: #B02000
     +roboto
   &-date
-    margin-bottom: 46px    
+    margin-bottom: 71px    
     font-size: 24px
     line-height: 150%
+  
     +roboto
   &-button
     position: relative
     border: none
     text-transform: uppercase
-    padding: 25px 87px 25px 34px   
-    
+    text-decoration: none
+    cursor: pointer
+    padding: 25px 87px 25px 34px
+    --animate-delay: 2.1s
     color: $primary
     background: linear-gradient(90deg, #FB641A 0%, #FC3309 100%) 
     border-radius: 300px
@@ -66,12 +73,10 @@
       top: 1px
       right: 0
       z-index: 5
-
     &::before
       content: ''
       position: absolute
-      background-color: rgba(255, 255, 255, 0.3)      
-
+      background-color: rgba(255, 255, 255, 0.3)
       display: block
       width: 82px
       height: 82px

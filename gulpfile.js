@@ -14,11 +14,12 @@ const groupMediaCss = require("gulp-group-css-media-queries");
 const cleanCSS = require("gulp-clean-css");
 const rename = require("gulp-rename");
 const imageMin = require("gulp-imagemin");
-const webP = require('gulp-webp');
-const webpHTML = require('gulp-webp-html');
-const webpCSS = require('gulp-webp-css');
-const cleanDir = require('gulp-clean-dir');
-const uglify = require('gulp-uglify');
+const webP = require("gulp-webp");
+const webpHTML = require("gulp-webp-html");
+const webpCSS = require("gulp-webp-css");
+const cleanDir = require("gulp-clean-dir");
+const uglify = require("gulp-uglify");
+const concat = require("gulp-concat");
 
 function browserSync() {
   browsersync.init({
@@ -74,41 +75,57 @@ function css() {
 }
 
 function js() {
-  return src("#src/js/**/*.js")    
-    .pipe(dest(output+"/js/"))
+  return src("#src/js/main.js")
+    .pipe(dest(output + "/js/"))
     .pipe(uglify())
-    .pipe(rename({
-      extname: ".min.js"
-    }))
-    .pipe(dest(output+"/js/"));
+    .pipe(
+      rename({
+        extname: ".min.js",
+      })
+    )
+    .pipe(dest(output + "/js/"))
+    .pipe(
+      src([
+        "node_modules/fancybox/dist/helpers/js/jquery.fancybox-media.js",
+        "node_modules/jquery/dist/jquery.min.js",
+      ])
+    )
+    .pipe(concat("ext_script.js"))
+    .pipe(uglify())
+    .pipe(rename({extname: ".min.js",}))
+    .pipe(dest(output + "/js/"));
 }
 
 function image() {
   return src("#src/img/**/*.{jpg,png,svg,gif,ico,webp}")
-    .pipe(webP({
-      quality: 70
-    }))
+    .pipe(
+      webP({
+        quality: 70,
+      })
+    )
     .pipe(cleanDir(output + "/img/"))
     .pipe(dest(output + "/img/"))
     .pipe(src("#src/img/**/*.{jpg,png,svg,gif,ico,webp}"))
-    .pipe(imageMin(
-      {
+    .pipe(
+      imageMin({
         progressive: true,
-        svgoPlugins: [{removeViewBox: false}],
+        svgoPlugins: [{ removeViewBox: false }],
         interlaced: true,
-        optimizationLevel: 3
-      }
-    ))
+        optimizationLevel: 3,
+      })
+    )
     .pipe(cleanDir(output + "/img/"))
     .pipe(dest(output + "/img/"))
     .pipe(browsersync.stream());
 }
 
-function norm() {
+function cssLibrary() {
   return src("node_modules/normalize.css/normalize.css")
-    .pipe(
-      dest(output + "/css/")
-    );
+    .pipe(dest(output + "/css/"))
+    .pipe(src("node_modules/animate.css/animate.min.css"))
+    .pipe(dest(output + "/css/"))
+    .pipe(src("node_modules/fancybox/dist/css/jquery.fancybox.css"))
+    .pipe(dest(output + "/css/"));
 }
 
 function clean() {
@@ -120,16 +137,14 @@ function watchFiles(params) {
   gulp.watch(["#src/sass/**/*.sass"], css);
   gulp.watch(["#src/img/**/*.{jpg,png,svg,gif,ico,webp}"], image);
   gulp.watch(["#src/js/**/*.js"], js);
-
 }
 
-const out = gulp.series(clean, gulp.parallel(norm, js, image, css, html));
+const out = gulp.series(clean, gulp.parallel(cssLibrary, js, image, css, html));
 const watch = gulp.parallel(out, watchFiles, browserSync);
-
 
 exports.js = js;
 exports.image = image;
-exports.norm = norm;
+exports.cssLibrary = cssLibrary;
 exports.css = css;
 exports.html = html;
 exports.out = out;

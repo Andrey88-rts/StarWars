@@ -109,6 +109,7 @@ body {
   max-width: 572px;
   font-size: 18px;
   line-height: 150%;
+  --animate-delay: 1.2s;
   color: #AFAFAF;
   font-family: "Roboto Regular", sans-serif;
   font-weight: normal;
@@ -124,7 +125,7 @@ body {
 }
 
 .hero-date {
-  margin-bottom: 46px;
+  margin-bottom: 71px;
   font-size: 24px;
   line-height: 150%;
   font-family: "Roboto Regular", sans-serif;
@@ -135,7 +136,10 @@ body {
   position: relative;
   border: none;
   text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
   padding: 25px 87px 25px 34px;
+  --animate-delay: 2.1s;
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, from(#FB641A), to(#FC3309));
   background: -o-linear-gradient(left, #FB641A 0%, #FC3309 100%);
