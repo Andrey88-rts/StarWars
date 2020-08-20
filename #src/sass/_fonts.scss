@@ -44,16 +44,20 @@
 
 @mixin roboto {
   font-family: "Roboto Regular", sans-serif;
+  font-weight: normal;
 }
 
 @mixin roboBlack {
   font-family: "Roboto Black", sans-serif;
+  font-weight: 900;
 }
 
 @mixin roboBold {
   font-family: "Roboto Bold", sans-serif;
+  font-weight: bold;
 }
 
 @mixin pNBlack {
   font-family: "Proxima Nova Black", sans-serif;
+  font-weight: 900;
 }

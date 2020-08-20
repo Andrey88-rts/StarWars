@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Andrey88-rts/Children-s-rest.git"
+    "url": "git+https://github.com/Andrey88-rts/StarWars.git"
   },
   "author": "Andrey Luft",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Andrey88-rts/Children-s-rest/issues"
+    "url": "https://github.com/Andrey88-rts/StarWars.git/issues"
   },
-  "homepage": "https://github.com/Andrey88-rts/Children-s-rest#readme",
+  "homepage": "https://github.com/Andrey88-rts/StarWars.git#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
