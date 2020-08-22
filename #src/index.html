@@ -13,9 +13,11 @@
   <body>
     <header class="header">
       <div class="container">
+        
         <div class="navbar">
           <img src="img/logo.svg" alt="Звездные войны" class="navbar__logo animate__animated animate__fadeIn animation__duration-1s"/>
-          <nav
+          <div class="m-menu">
+            <nav
             class="navbar-block animate__animated animate__fadeIn animation__duration-1s"
           >
             <a href="#" class="navbar-block__link">Билеты</a>
@@ -23,44 +25,51 @@
             <a href="#" class="navbar-block__link">Трейлеры</a>
             <a href="#" class="navbar-block__link">Отзывы</a>
           </nav>
+          </div>
+          <div class="navbar-burger animate__animated animate__fadeIn animation__duration-1s">
+            <span class="navbar-burger__line"></span>
+            <span class="navbar-burger__line"></span>
+            <span class="navbar-burger__line"></span>
+          </div>
         </div>
 
+       <div class="hero">
         <h1
-          class="hero-title animate__animated animate__fadeInLeft animation-duration__1s animate__delay-1s"
-        >
-          Эпизод IX
-        </h1>
-        <h2
-          class="hero-subtitle animate__animated animate__fadeInRight animation-duration__0.6s animate__delay-1s"
-        >
-          Скайуокер.&nbsp;Восход
-        </h2>
-        <p
-          class="hero-text animate__animated animate__fadeInLeft animation-duration__0.8s animate__delay-1s"
-        >
-          Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже
-          более сорока лет, и обещает дать ответы на все загадки из предыдущих
-          серий. Зрителя ожидают старые и новые герои, уникальные миры,
-          увлекательные путешествия на край Галактики и грандиозный финал
-          фантастической саги
-        </p>
-        <h3
-          class="hero-premier animate__animated animate__fadeInRight animation-duration__1s animate__delay-1s"
-        >
-          Премьера
-        </h3>
-        <h4
-          class="hero-date animate__animated animate__fadeInLeft animation-duration__1.2s animate__delay-1s"
-        >
-          19 декабря 2019
-        </h4>
-        <a
-          data-fancybox          
-          href="https://www.youtube.com/watch?v=HfnINdtw_8E"
-          class="hero-button button__trailer animate__animated animate__fadeIn animation-duration__1.4s animate__delay-1s"
-          >Смотреть трейлер</a
-        >
-      </div>
+        class="hero-title animate__animated animate__fadeInLeft animation-duration__1s animate__delay-1s"
+      >
+        Эпизод IX
+      </h1>
+      <h2
+        class="hero-subtitle animate__animated animate__fadeInRight animation-duration__0.6s animate__delay-1s"
+      >
+        Скайуокер.&nbsp;Восход
+      </h2>
+      <p
+        class="hero-text animate__animated animate__fadeInLeft animation-duration__0.8s animate__delay-1s"
+      >
+        Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже
+        более сорока лет, и обещает дать ответы на все загадки из предыдущих
+        серий. Зрителя ожидают старые и новые герои, уникальные миры,
+        увлекательные путешествия на край Галактики и грандиозный финал
+        фантастической саги
+      </p>
+      <h3
+        class="hero-premier animate__animated animate__fadeInRight animation-duration__1s animate__delay-1s"
+      >
+        Премьера
+      </h3>
+      <h4
+        class="hero-date animate__animated animate__fadeInLeft animation-duration__1.2s animate__delay-1s"
+      >
+        19 декабря 2019
+      </h4>
+      <a
+        href="https://www.youtube.com/watch?v=KVRBfWQgyuY"
+        class="popupbox-video fancybox.iframe hero-button button__trailer animate__animated animate__fadeIn animation-duration__1.4s animate__delay-1s"
+        >Смотреть трейлер</a
+      >
+    </div>
+       </div>
     </header>
 
     <section class="section section-slider">
@@ -84,7 +93,7 @@
                     <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
                   </div>
                   <img src="img/episode_4_1977.jpg" alt="Эпизод 4" class="slider-main__image">
-                  <a data-fancybox href="https://www.youtube.com/watch?v=Ugr4mMisuZc" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
+                  <a href="https://www.youtube.com/watch?v=Ugr4mMisuZc" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
               </div>
               </div>
               <div class="swiper-slide">
@@ -100,6 +109,7 @@
                     <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
                   </div>
                   <img src="img/episode_5_1980.jpg" alt="Эпизод 5" class="slider-main__image">
+                  <a href="https://www.youtube.com/watch?v=7ZjN5TiYzuI" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
               </div>
               </div>
               <div class="swiper-slide">
@@ -115,6 +125,7 @@
                     <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
                   </div>
                   <img src="img/episode_6_1983.jpg" alt="Эпизод 6" class="slider-main__image">
+                  <a href="https://www.youtube.com/watch?v=juH_QsXNbEs" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
               </div>
               </div>
               <div class="swiper-slide">
@@ -130,6 +141,7 @@
                     <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
                   </div>
                   <img src="img/episode_1_1999.jpg" alt="Эпизод 1" class="slider-main__image">
+                  <a href="https://www.youtube.com/watch?v=pxLVXj_qqrM" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
               </div>
               </div>
               <div class="swiper-slide">
@@ -145,6 +157,7 @@
                     <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
                   </div>
                   <img src="img/episode_2_2002.jpg" alt="Эпизод 2" class="slider-main__image">
+                  <a href="https://www.youtube.com/watch?v=5v5pA0S3_zk" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
               </div>
               </div>
               <div class="swiper-slide">
@@ -160,6 +173,7 @@
                     <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
                   </div>
                   <img src="img/episode_3_2005.jpg" alt="Эпизод 3" class="slider-main__image">
+                  <a href="https://www.youtube.com/watch?v=Uz_SI5JC5-Q" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
               </div>
               </div>
               <div class="swiper-slide">
@@ -175,6 +189,7 @@
                     <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
                   </div>
                   <img src="img/episode_7_2015.jpg" alt="Эпизод 7" class="slider-main__image">
+                  <a href="https://www.youtube.com/watch?v=fbGEZzYNr5I" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
               </div>
               </div>
               <div class="swiper-slide">
@@ -190,6 +205,7 @@
                     <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
                   </div>
                   <img src="img/episode_8_2017.jpg" alt="Эпизод 8" class="slider-main__image">
+                  <a href="https://www.youtube.com/watch?v=gcIdWujuxuM" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
               </div>
               </div>
           </div>
@@ -206,7 +222,7 @@
     </section>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.fancybox-media.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
     <script src="js/swiper-bundle.min.js"></script>    
     <script src="js/main.min.js"></script>
   </body>

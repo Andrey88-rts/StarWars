@@ -1,0 +1,77 @@
+// Large devices (desktops, less than 1200px)
+@media screen and (max-width: 1060px)
+  .container
+    max-width: 1000px
+  .hero
+    padding-right: 20px
+      
+// Medium devices (tablets, less than 992px)
+@media screen and (max-width: 992px)
+  .container
+    max-width: 850px 
+  .hero
+    padding-right: 50px
+  
+// // Small devices (landscape phones, less than 768px)
+@media screen and (max-width: 768px)
+  .container
+    max-width: 650px
+  .hero
+    &-title    
+      font-size: 30px
+      line-height: 100%   
+      +pNBlack
+    &-subtitle    
+      font-size: 48px
+      line-height: 78px 
+      +pNBlack
+
+
+@media screen and (max-width: 576px)
+  .container
+    max-width: 450px
+  .hero
+    &-title    
+      font-size: 20px
+      line-height: 100%   
+      +pNBlack
+    &-subtitle    
+      font-size: 32px
+      line-height: 78px 
+      +pNBlack
+  .navbar
+    justify-content: space-between
+    &-block
+      display: none           
+      &__link
+        margin-right: 0
+        margin-top: 10px       
+    &-burger
+      &__line
+        display: block      
+  .active
+    display: flex    
+    width: 100%
+    flex-direction: column
+    justify-content: start
+    align-items: center
+    background-color: rgba(80,80,80,0.95)
+    position: fixed
+    top: 130px
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 20
+  .line1
+    transform: rotate(45deg) translateY(12px) translateX(2px)    
+    transition: transform 0.5s
+    // margin-bottom: 0
+  .line2
+    transform: scale(0)
+    transition: transform 0.5s
+  .line3
+    transform: rotate(-45deg) translateY(-12px) translateX(2px)
+    transition: transform 0.5s
+@media screen and (max-width: 400px)
+  .container
+    max-width: 350px

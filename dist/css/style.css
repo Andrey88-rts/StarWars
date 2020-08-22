@@ -9,7 +9,7 @@
 body {
   background: #000000fd url(../img/main-bg.png) center bottom 100% no-repeat;
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
   color: #fff;
 }
 
@@ -79,10 +79,12 @@ body {
 }
 
 .navbar-block__link {
+  position: relative;
   color: #fff;
   text-decoration: none;
   font-size: 16px;
   line-height: 150%;
+  padding-bottom: 5px;
   font-family: "Roboto Regular", sans-serif;
   font-weight: normal;
   margin-right: 15px;
@@ -90,6 +92,47 @@ body {
 
 .navbar-block__link:last-child {
   margin-right: 0;
+}
+
+.navbar-block__link:hover {
+  cursor: pointer;
+}
+
+.navbar-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-burger__line {
+  display: none;
+  height: 5px;
+  width: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.navbar-burger__line:last-child {
+  margin-bottom: 0;
+}
+
+.navbar-burger:hover {
+  cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .hero-title {
@@ -251,6 +294,7 @@ body {
 }
 
 .slider-main__item:hover {
+  cursor: pointer;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 101, 255, 0.86)), to(rgba(64, 101, 255, 0.86)));
   background: -o-linear-gradient(bottom, rgba(64, 101, 255, 0.86), rgba(64, 101, 255, 0.86));
   background: linear-gradient(0deg, rgba(64, 101, 255, 0.86), rgba(64, 101, 255, 0.86));
@@ -314,7 +358,189 @@ body {
 .slider-main__arrow-right {
   cursor: pointer;
 }
+
+@media screen and (max-width: 1060px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .hero {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 850px;
+  }
+
+  .hero {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 650px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    line-height: 100%;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-weight: 900;
+  }
+
+  .hero-subtitle {
+    font-size: 48px;
+    line-height: 78px;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-weight: 900;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 450px;
+  }
+
+  .hero-title {
+    font-size: 20px;
+    line-height: 100%;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-weight: 900;
+  }
+
+  .hero-subtitle {
+    font-size: 32px;
+    line-height: 78px;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-weight: 900;
+  }
+
+  .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .navbar-block {
+    display: none;
+  }
+
+  .navbar-block__link {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .navbar-burger__line {
+    display: block;
+  }
+
+  .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(80, 80, 80, 0.95);
+    position: fixed;
+    top: 130px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+  }
+
+  .line1 {
+    -webkit-transform: rotate(45deg) translateY(12px) translateX(2px);
+        -ms-transform: rotate(45deg) translateY(12px) translateX(2px);
+            transform: rotate(45deg) translateY(12px) translateX(2px);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+
+  .line2 {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+
+  .line3 {
+    -webkit-transform: rotate(-45deg) translateY(-12px) translateX(2px);
+        -ms-transform: rotate(-45deg) translateY(-12px) translateX(2px);
+            transform: rotate(-45deg) translateY(-12px) translateX(2px);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 350px;
+  }
+}
 @supports (-webkit-appearance:none){
 body{background:#000000fd url(../img/main-bg.webp) center bottom 100% no-repeat}
 .hero-button::after{background:#fff url("../img/Polygon 1.svg") center 13px no-repeat}
+}
+
+ @media screen and (max-width: 1060px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 992px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 576px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 400px){
+
+@supports (-webkit-appearance:none){
+
+}
+
 }

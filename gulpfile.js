@@ -84,7 +84,7 @@ function js() {
       })
     )
     .pipe(dest(output + "/js/"))    
-    .pipe(src("node_modules/fancybox/dist/helpers/js/jquery.fancybox-media.js"))
+    .pipe(src("node_modules/fancybox/dist/js/jquery.fancybox.js"))
     .pipe(dest(output + "/js/"))
     .pipe(src("node_modules/jquery/dist/jquery.min.js"))
     .pipe(dest(output + "/js/"))
