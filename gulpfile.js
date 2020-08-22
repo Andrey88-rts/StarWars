@@ -83,16 +83,12 @@ function js() {
         extname: ".min.js",
       })
     )
+    .pipe(dest(output + "/js/"))    
+    .pipe(src("node_modules/fancybox/dist/helpers/js/jquery.fancybox-media.js"))
     .pipe(dest(output + "/js/"))
-    .pipe(
-      src([
-        "node_modules/fancybox/dist/helpers/js/jquery.fancybox-media.js",
-        "node_modules/jquery/dist/jquery.min.js",
-      ])
-    )
-    .pipe(concat("ext_script.js"))
-    .pipe(uglify())
-    .pipe(rename({extname: ".min.js",}))
+    .pipe(src("node_modules/jquery/dist/jquery.min.js"))
+    .pipe(dest(output + "/js/"))
+    .pipe(src("node_modules/swiper/swiper-bundle.min.js"))
     .pipe(dest(output + "/js/"));
 }
 
@@ -125,6 +121,8 @@ function cssLibrary() {
     .pipe(src("node_modules/animate.css/animate.min.css"))
     .pipe(dest(output + "/css/"))
     .pipe(src("node_modules/fancybox/dist/css/jquery.fancybox.css"))
+    .pipe(dest(output + "/css/"))
+    .pipe(src("node_modules/swiper/swiper-bundle.min.css"))
     .pipe(dest(output + "/css/"));
 }
 

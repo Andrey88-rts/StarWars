@@ -6,6 +6,7 @@
     <title>StarWars</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">    
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
@@ -65,136 +66,148 @@
     <section class="section section-slider">
       <div class="container">
         <h5 class="slider-title">Предыдущие эпизоды</h5>
-        <div class="slider-main">
-          <div class="slider-main__item">            
-            
-              <div class="slider-main__year">1977</div>
-              <div class="slider-main__episode">Эпизод IV: Новая надежда</div>
-              <div class="slider-main__rating">
-                <span class="slider-main__text">Рейтинг</span>
-                <span class="slider-main__stars"></span><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+
+        <div class="swiper-container slider-main animate__animated animate__fadeIn animation-duration__1.4s animate__delay-2s">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slider-main__item"> 
+                  <div class="slider-main__year">1977</div>
+                  <div class="slider-main__episode">Эпизод IV: Новая надежда</div>
+                  <div class="slider-main__rating">
+                    <span class="slider-main__text">Рейтинг</span>
+                    <span class="slider-main__stars"></span><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                  </div>
+                  <img src="img/episode_4_1977.jpg" alt="Эпизод 4" class="slider-main__image">
+                  <a data-fancybox href="https://www.youtube.com/watch?v=Ugr4mMisuZc" class="slider-main__button-youtube"><img src="img/youtube-icon.png" alt="youtube" class="slider-main__image-youtube"></a>
               </div>
-              <img src="img/episode_4_1977.jpg" alt="Эпизод 4" class="slider-main__image">
-            
-          </div> 
-          <div class="slider-main__item">            
-            
-              <div class="slider-main__year">1980</div>
-              <div class="slider-main__episode">Эпизод V: Империя наносит ответный удар</div>
-              <div class="slider-main__rating">
-                <span class="slider-main__text">Рейтинг</span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
               </div>
-              <img src="img/episode_5_1980.jpg" alt="Эпизод 5" class="slider-main__image">
-            
+              <div class="swiper-slide">
+                <div class="slider-main__item">
+                  <div class="slider-main__year">1980</div>
+                  <div class="slider-main__episode">Эпизод V: Империя наносит ответный удар</div>
+                  <div class="slider-main__rating">
+                    <span class="slider-main__text">Рейтинг</span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                  </div>
+                  <img src="img/episode_5_1980.jpg" alt="Эпизод 5" class="slider-main__image">
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-main__item">  
+                  <div class="slider-main__year">1983</div>
+                  <div class="slider-main__episode">Эпизод VI: Возвращение джедая</div>
+                  <div class="slider-main__rating">
+                    <span class="slider-main__text">Рейтинг</span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                  </div>
+                  <img src="img/episode_6_1983.jpg" alt="Эпизод 6" class="slider-main__image">
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-main__item"> 
+                  <div class="slider-main__year">1999</div>
+                  <div class="slider-main__episode">Эпизод I: Скрытая угроза</div>
+                  <div class="slider-main__rating">
+                    <span class="slider-main__text">Рейтинг</span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                  </div>
+                  <img src="img/episode_1_1999.jpg" alt="Эпизод 1" class="slider-main__image">
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-main__item">  
+                  <div class="slider-main__year">2002</div>
+                  <div class="slider-main__episode">Эпизод II: Атака клонов</div>
+                  <div class="slider-main__rating">
+                    <span class="slider-main__text">Рейтинг</span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                  </div>
+                  <img src="img/episode_2_2002.jpg" alt="Эпизод 2" class="slider-main__image">
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-main__item">
+                  <div class="slider-main__year">2005</div>
+                  <div class="slider-main__episode">Эпизод III: Месть ситхов</div>
+                  <div class="slider-main__rating">
+                    <span class="slider-main__text">Рейтинг</span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                  </div>
+                  <img src="img/episode_3_2005.jpg" alt="Эпизод 3" class="slider-main__image">
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-main__item">  
+                  <div class="slider-main__year">2015</div>
+                  <div class="slider-main__episode">Эпизод VII: Пробуждение силы</div>
+                  <div class="slider-main__rating">
+                    <span class="slider-main__text">Рейтинг</span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                  </div>
+                  <img src="img/episode_7_2015.jpg" alt="Эпизод 7" class="slider-main__image">
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-main__item">    
+                  <div class="slider-main__year">2017</div>
+                  <div class="slider-main__episode">Эпизод VIII: Последние джедаи</div>
+                  <div class="slider-main__rating">
+                    <span class="slider-main__text">Рейтинг</span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                    <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
+                  </div>
+                  <img src="img/episode_8_2017.jpg" alt="Эпизод 8" class="slider-main__image">
+              </div>
+              </div>
           </div>
-          <div class="slider-main__item">            
-            
-              <div class="slider-main__year">1983</div>
-              <div class="slider-main__episode">Эпизод VI: Возвращение джедая</div>
-              <div class="slider-main__rating">
-                <span class="slider-main__text">Рейтинг</span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-              </div>
-              <img src="img/episode_6_1983.jpg" alt="Эпизод 6" class="slider-main__image">
-            
-          </div>  
-          <div class="slider-main__item">            
-            
-              <div class="slider-main__year">1999</div>
-              <div class="slider-main__episode">Эпизод I: Скрытая угроза</div>
-              <div class="slider-main__rating">
-                <span class="slider-main__text">Рейтинг</span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-              </div>
-              <img src="img/episode_1_1999.jpg" alt="Эпизод 1" class="slider-main__image">
-            
-          </div> 
-          <div class="slider-main__item">            
-            
-              <div class="slider-main__year">2002</div>
-              <div class="slider-main__episode">Эпизод II: Атака клонов</div>
-              <div class="slider-main__rating">
-                <span class="slider-main__text">Рейтинг</span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-              </div>
-              <img src="img/episode_2_2002.jpg" alt="Эпизод 2" class="slider-main__image">
-            
-          </div>
-          <div class="slider-main__item">            
-           
-              <div class="slider-main__year">2005</div>
-              <div class="slider-main__episode">Эпизод III: Месть ситхов</div>
-              <div class="slider-main__rating">
-                <span class="slider-main__text">Рейтинг</span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-              </div>
-              <img src="img/episode_3_2005.jpg" alt="Эпизод 3" class="slider-main__image">
-           
-          </div> 
-          <div class="slider-main__item">            
-            
-              <div class="slider-main__year">2015</div>
-              <div class="slider-main__episode">Эпизод VII: Пробуждение силы</div>
-              <div class="slider-main__rating">
-                <span class="slider-main__text">Рейтинг</span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-              </div>
-              <img src="img/episode_7_2015.jpg" alt="Эпизод 7" class="slider-main__image">
-            
-          </div>  
-          <div class="slider-main__item">            
-            
-              <div class="slider-main__year">2017</div>
-              <div class="slider-main__episode">Эпизод VIII: Последние джедаи</div>
-              <div class="slider-main__rating">
-                <span class="slider-main__text">Рейтинг</span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-solid_4.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-                <span class="slider-main__stars"><img src="img/star-regular_1.svg" alt="звезды рейтинга" class="slider-main__star"></span>
-              </div>
-              <img src="img/episode_8_2017.jpg" alt="Эпизод 8" class="slider-main__image">
-           
-          </div>            
-        </div>
+
         <div class="slider-main__arrow">
           <img src="img/left-arrow.svg" alt="стрелка влево" class="slider-main__arrow-left">
-        <img src="img/right-arrow.svg" alt="стрелка вправо" class="slider-main__arrow-right">
+          <img src="img/right-arrow.svg" alt="стрелка вправо" class="slider-main__arrow-right">
         </div>
+ 
+      </div>
+
+
       </div>
     </section>
 
-    <script src="js/ext_scripts.min.js"></script>    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fancybox-media.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>    
     <script src="js/main.min.js"></script>
   </body>
 </html>

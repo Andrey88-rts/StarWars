@@ -36,8 +36,7 @@
   &-premier
     margin-bottom: 5px
     font-size: 18px
-    line-height: 150%
-   
+    line-height: 150%   
     color: #B02000
     +roboto
   &-date
@@ -99,7 +98,16 @@
       width: 250px      
       top: 0
       left: 0
-      z-index: -20    
+      z-index: -20
+    &__image-youtube
+      position: absolute
+      object-fit: cover
+      background-color: #f0b8b8      
+      border-top-left-radius: 10px
+      width: 50px
+      bottom: 0
+      right: 0
+      z-index: 10
     &__item
       padding: 30px
       position: relative
@@ -107,7 +115,7 @@
       display: flex
       flex-direction: column
       justify-content: space-between          
-      width: 250px
+      width: 250px      
       min-height: 200px      
       margin-bottom: 20px      
       background: linear-gradient(0deg, rgba(80, 80, 80, 0.86), rgba(80, 80, 80, 0.86))
@@ -115,13 +123,11 @@
       border-radius: 10px      
       &:hover        
         background: linear-gradient(0deg, rgba(64, 101, 255, 0.86), rgba(64, 101, 255, 0.86))
-    &__year  
-      // margin-bottom: 5px    
+    &__year   
       font-size: 18px
       line-height: 150%
       +roboto
-    &__episode  
-      // margin-bottom: 12px    
+    &__episode         
       font-size: 18px
       line-height: 150%
       +roboBlack
@@ -147,5 +153,9 @@
       &-left, &-right
         cursor: pointer
       
+
+//слайдер//
+
+
 
 

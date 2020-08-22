@@ -17,6 +17,7 @@ body {
   max-width: 1060px;
   margin: 0 auto;
   margin-top: 90px;
+  margin-bottom: 100px;
 }
 
 @font-face {
@@ -210,6 +211,18 @@ body {
   top: 0;
   left: 0;
   z-index: -20;
+}
+
+.slider-main__image-youtube {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #f0b8b8;
+  border-top-left-radius: 10px;
+  width: 50px;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .slider-main__item {
